@@ -1,10 +1,119 @@
+@keyframes slide-1 {
+  0% {
+    left: 0;
+  }
+  30% {
+    left: 0;
+  }
+  45% {
+    left: -100%;
+  }
+  75% {
+    left: -100%;
+  }
+  90% {
+    left: -200%;
+  }
+  100% {
+    left: -200%;
+  }
+}
+
+@keyframes slide-2 {
+  0% {
+    left: 100%;
+  }
+  30% {
+    left: 100%;
+  }
+  45% {
+    left: 0;
+  }
+  75% {
+    left: 0;
+  }
+  90% {
+    left: -100%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+@keyframes slide-3 {
+  0% {
+    left: 200%;
+  }
+  30% {
+    left: 200%;
+  }
+  45% {
+    left: 100%;
+  }
+  75% {
+    left: 100%;
+  }
+  90% {
+    left: 0;
+  }
+  100% {
+    left: 0;
+  }
+}
+
 .slider {
-
 }
-
 .slider .slider__slides {
-
+  position: relative;
+  overflow: hidden;
+  min-height: 300px;
+}
+.slider .slider__slide {
+}
+.slider .slider__nav {
 }
 
+.slide {
+  padding: 10px;
+  width: 100%;
+  min-height: 300px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  animation-duration: 14s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
 
-.slider .slider__slide {}
+.slide:first-child {
+  background-color: lightcoral;
+  left: 0;
+  animation-name: slide-1;
+}
+
+.slide:nth-child(2) {
+  background-color: lightskyblue;
+  left: 100%;
+  animation-name: slide-2;
+}
+
+.slide:last-child {
+  background-color: lightgreen;
+  left: 200%;
+  animation-name: slide-3;
+}
+
+.slide .slide__hdl {
+  margin: 0;
+}
+.slide .slide__text {
+}
+.slide .slide__link {
+}
+
+.nav {
+}
+.nav .nav__btn {
+}
+.nav .nav__btn.nav__btn--next {
+}
