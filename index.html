@@ -2,9 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
+
+    <!--    <link rel="preconnect" href="https://fonts.googleapis.com">-->
+    <!--    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
+    <!--    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">-->
+
     <link rel="stylesheet" href="src/styles/normalize.css" />
     <link rel="stylesheet" href="src/styles/style.css" />
   </head>
@@ -12,27 +20,33 @@
     <div class="slider">
       <div class="slider__slides">
         <div class="slider__slide slide">
-          <h2 class="slide__hdl">Lorem ipsum dolor</h2>
-          <p class="slide__text"></p>
-          <a href="" class="slide__link">Read more</a>
+          <div class="slide__cover">
+            <h2 class="slide__hdl">Lorem ipsum dolor.</h2>
+            <p class="slide__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est,
+              nihil?
+            </p>
+            <a href="" class="slide__link">Read more</a>
+          </div>
         </div>
         <div class="slider__slide slide">
-          <h2 class="slide__hdl">Lorem, ipsum.</h2>
-          <p class="slide__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde et
-            ipsam quas eveniet, a odio saepe veritatis optio possimus.
-          </p>
-          <a href="" class="slide__link">Read more</a>
+          <div class="slide__cover">
+            <h2 class="slide__hdl">Lorem ipsum.</h2>
+            <p class="slide__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+            <a href="" class="slide__link">Read more</a>
+          </div>
         </div>
         <div class="slider__slide slide">
-          <h2 class="slide__hdl">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Voluptatem, sed.
-          </h2>
-          <p class="slide__text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          </p>
-          <a href="" class="slide__link">Read more</a>
+          <div class="slide__cover">
+            <h2 class="slide__hdl">Lorem ipsum.</h2>
+            <p class="slide__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi
+              quod repellendus sint.
+            </p>
+            <a href="" class="slide__link">Read more</a>
+          </div>
         </div>
       </div>
       <nav class="slider__nav nav">

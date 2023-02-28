@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "Roboto Light";
+  src: url("../fonts/roboto-light-webfont.woff2") format("woff2"),
+    url("../fonts/roboto-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto Regular";
+  src: url("../fonts/roboto-regular-webfont.woff2") format("woff2"),
+    url("../fonts/roboto-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 @keyframes slide-1 {
   0% {
     left: 0;
@@ -74,7 +90,6 @@
 }
 
 .slide {
-  padding: 10px;
   width: 100%;
   min-height: 300px;
   box-sizing: border-box;
@@ -83,30 +98,47 @@
   animation-duration: 14s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  font-family: "Roboto Regular", sans-serif;
 }
 
 .slide:first-child {
-  background-color: lightcoral;
   left: 0;
   animation-name: slide-1;
+  background-image: url("../images/images.1.jpeg");
 }
 
 .slide:nth-child(2) {
-  background-color: lightskyblue;
   left: 100%;
   animation-name: slide-2;
+  background-image: url("../images/images2.jpeg");
 }
 
 .slide:last-child {
-  background-color: lightgreen;
   left: 200%;
   animation-name: slide-3;
+  background-image: url("../images/images3.jpeg");
+}
+
+.slide .slide__cover {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .slide .slide__hdl {
   margin: 0;
+  /*font-weight: 400;*/
+  font-family: "Roboto Regular", sans-serif;
 }
 .slide .slide__text {
+  /*font-weight: 100;*/
+  font-family: "Roboto Light", sans-serif;
 }
 .slide .slide__link {
 }
